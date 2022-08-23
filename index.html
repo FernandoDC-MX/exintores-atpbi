@@ -20,6 +20,17 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <!-- Owl carousel CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        
+        <!-- Owl JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     </head>
     <body id="page-top">
 
@@ -35,7 +46,7 @@
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#services">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Clientes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Contacto</a></li>
                     </ul>
                 </div>
@@ -43,14 +54,23 @@
         </nav>
 
 
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-            </div>
-        </header>
+        <div class="w-100 d-flex d-flex-row">
+             <!-- Masthead-->
+            <header class="masthead w-50">
+                <div class="container">
+                    <div class="masthead-subheading">Welcome To Our Studio!</div>
+                    <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                </div>
+            </header>
+            <header class="masthead w-50">
+                <div class="container">
+                    <div class="masthead-subheading">Welcome To Our Studio!</div>
+                    <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+                    <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                </div>
+            </header>
+        </div>
 
         <!-- Clients-->
         <div class="py-5">
@@ -80,7 +100,7 @@
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-sm-4 mb-4 mb-md-1">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-solid fa-dollar-sign fa-stack-1x fa-inverse"></i>
@@ -88,7 +108,7 @@
                         <h4 class="my-3">Venta de Extintores</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-sm-4 mb-4 mb-md-1">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-solid fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
@@ -96,7 +116,7 @@
                         <h4 class="my-3">Mantenimiento</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-sm-4 mb-4 mb-md-1">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-solid fa-handshake-angle fa-stack-1x fa-inverse"></i>
@@ -210,68 +230,83 @@
             </div>
         </section>
 
-        <!-- About-->
-        <section class="page-section bg-light" id="about">
+        <!-- Experincias-->
+        <section class="page-section bg-light" id="experience">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h2 class="section-heading text-uppercase">Experiencias</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="card-custom">
+                                    <div class="card-custom-img">
+                                        <img src="assets/img/experience/maxim-tajer-x3S1aGQNgro-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="card-custom-body">
+                                        <h4>Card 1</h4>
+                                        <p>Magna elit culpa irure exercitation commodo labore nulla ad dolor laborum do velit. Sit cillum laborum elit velit
+                                        cupidatat reprehenderit nulla.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
+                            <div class="item">
+                                <div class="card-custom">
+                                    <div class="card-custom-img">
+                                        <img src="assets/img/experience/jay-heike-ciVuEkjOotE-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="card-custom-body">
+                                        <h4>Card 2</h4>
+                                        <p>Magna elit culpa irure exercitation commodo labore nulla ad dolor laborum do velit. Sit cillum laborum elit velit
+                                        cupidatat reprehenderit nulla.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
+                            <div class="item">
+                                <div class="card-custom">
+                                    <div class="card-custom-img">
+                                        <img src="assets/img/experience/randy-fath-5mhjqURabaU-unsplash.jpg" alt="">
+                                    </div>
+                                    <div class="card-custom-body">
+                                        <h4>Card 3</h4>
+                                        <p>Magna elit culpa irure exercitation commodo labore nulla ad dolor laborum do velit. Sit cillum laborum elit velit
+                                        cupidatat reprehenderit nulla.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card-custom">
+                            <iframe src="https://www.youtube.com/embed/tCCY31XxN_Y" frameborder="0" allowfullscreen=""></iframe>
                         </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </section>
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:25,
+                    autoplay: true,
+                    lazyLoad: true,
+                    responsive:{
+                        0:{
+                            items:1
+                        },
+                        600:{
+                            items:2
+                        },
+                        1000:{
+                            items:2
+                        }
+                    }
+                })
+            });
+        </script>
 
         <!-- Team-->
         <section class="page-section" id="team">
@@ -382,6 +417,7 @@
                 </form>
             </div>
         </section>
+
         <!-- Footer-->
         <footer class="footer py-4">
             <div class="container">
@@ -399,6 +435,7 @@
                 </div>
             </div>
         </footer>
+
         <!-- Portfolio Modals-->
         <!-- Portfolio item 1 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -435,6 +472,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Portfolio item 2 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -470,6 +508,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Portfolio item 3 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -505,6 +544,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Portfolio item 4 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -540,6 +580,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Portfolio item 5 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -575,6 +616,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Portfolio item 6 modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -610,6 +652,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -618,6 +661,8 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <!-- <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script> -->
+
+
     </body>
 </html>

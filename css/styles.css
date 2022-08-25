@@ -11483,6 +11483,12 @@ p {
 .text-j{
   text-align: justify;
 }
+
+
+.fa-pe{
+  font-size: 1.5em;
+}
+
 header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;

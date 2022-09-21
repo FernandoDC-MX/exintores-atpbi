@@ -4450,7 +4450,7 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  color: #f8f8f88c;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
   color: rgba(0, 0, 0, 0.7);
@@ -11344,10 +11344,11 @@ p {
 }
 
 #mainNav {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #212529;
+  background-image: url("../assets/img/ux/menu_base.png");
+  background-position: center;
+  height: 130px;
 }
+
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-size: 0.75rem;
@@ -11373,13 +11374,12 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #E32F2B;
+  color: #DFDFDF;
 }
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 3.5rem;
     border: none;
     background-color: transparent;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
@@ -11395,7 +11395,10 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
-    background-color: #444444;
+    background-image: none;
+    height: auto;
+
+    background-color: #D91A1A;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11535,6 +11538,15 @@ header.masthead .masthead-heading {
     margin-bottom: 4rem;
   }
 }
+
+@media screen and (max-width: 985px) {
+  #mainNav {
+    background: #D91A1A;
+    background-image: none;
+    height: auto;
+  }
+}
+
 #portfolio .portfolio-item {
   max-width: 26rem;
   margin-left: auto;
@@ -11801,11 +11813,11 @@ header.masthead .masthead-heading {
 }
 
 .img-brand {
-  height: 2.75rem;
+  height: 3rem;
 }
 
 section#contact {
-  background-color: #212529;
+  background-color: #582529;
   background-image: url("../assets/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;

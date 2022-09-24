@@ -44,13 +44,24 @@
                     <i class="fas fa-bars ms-1"></i>
                     Menu
                 </button>
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+
+                <!-- <a class="navbar-brand d-sm-none" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a> -->
+                <div class="d-flex align-items-center justify-content-center icon-social">
+                    <a href="#"><img src="assets/img/ux/icons/linkedin.png" class="mx-2" width="34" height="34" alt=""></a>
+                    <a href="#"><img src="assets/img/ux/icons/facebook.png" class="mx-2" width="30" height="30" alt=""></a>
+                    <a href="#"><img src="assets/img/ux/icons/twitter.png" class="mx-2" width="31" height="31" alt=""></a>
+                </div>
+
+                <!-- LOGO Mobile -->
+                <a class="navbar-brand d-lg-none" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <div class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <div class="nav-item"><a class="nav-link" href="#clients">Clientes</a></div>
-                        <div class="nav-item"><a class="nav-link" href="#services">Servicios</a></div>
-                        <div class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></div>
-                        <div class="nav-item"><a class="nav-link" href="#team">Contacto</a></div>
+                    <div class="navbar-nav text-uppercase w-100 custom-nav-items py-4 py-lg-0">
+                        <div class="nav-item  item"><a class="nav-link" href="#services">Servicios</a></div>
+                        <div class="nav-item  item"><a class="nav-link" href="#clients">Clientes</a></div>
+                        <div class="nav-item item-logo"><a class="nav-link" href="#page-top"><img src="assets/img/ux/icons/linkedin.png" class="mx-2" width="34" height="34" alt=""></a></div>
+                        <div class="nav-item  item"><a class="nav-link" href="#experience">Experiencia</a></div>
+                        <div class="nav-item  item"><a class="nav-link" href="#team">Contacto</a></div>
                     </div>
                 </div>
             </div>
@@ -58,13 +69,24 @@
         </nav>
 
 
-        <div class="w-100 d-flex d-flex-row">
+        <div class="w-100 d-flex d-flex-row banner">
              <!-- Masthead-->
             <header class="masthead w-100">
-                <div class="container">
+                <!-- <div class="container">
                     <div class="masthead-subheading">Welcome To Our Studio!</div>
                     <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
                     <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                </div> -->
+                <div class="custom-container-text px-2">
+                    <h3>Antetítulo corto</h3>
+                    <h2>Título a<br> 2 Líneas</h2>
+                    <p>Muy breve descripción a tres líneas tomar en cuenta el número de palabras y no de letras</p>
+                    <div class="text-description-1">
+                        <p>Descripción <br> de modelo <br> muy corto</p>
+                    </div>
+                    <div class="text-description-2">
+                        <p>Descripción <br> de modelo <br> muy corto</p>
+                    </div>
                 </div>
             </header>
         </div>
@@ -171,7 +193,7 @@
         <section class="page-section bg-light" id="services">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Servicios</h2>
+                    <h2 class="section-heading color-red-custom text-uppercase">Servicios</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row text-center">
@@ -188,7 +210,7 @@
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
                             <i class="fas fa-solid fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="my-3">Mantenimiento</h4>
+                        <h4 class="my-3">Mantenimiento y Corección</h4>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
                     </div>
                     <div class="col-md-4 mb-sm-4 mb-4 mb-md-1">
@@ -204,11 +226,11 @@
         </section>
 
         <!-- Portfolio Grid-->
-        <section class="page-section" id="portfolio">
+        <section class="bg-gray-custom page-section" id="portfolio">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Normativas</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading color-white-custom text-uppercase">Normativas</h2>
+                    <h3 class="section-subheading color-red-custom">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 
             </div>
@@ -218,7 +240,7 @@
         <section class="page-section bg-light" id="experience">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Experiencias</h2>
+                    <h2 class="section-heading color-red-custom text-uppercase">Experiencias</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
                 <div class="row">
@@ -303,21 +325,17 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-4 text-center">
-                        <h4 class="section-heading mb-4">Ubicación</h4>
+                        <h4 class="color-white-custom mb-4">Ubicación</h4>
                         <div class="map-responsive">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14785.425500984853!2d-100.92835760521127!3d22.112386963142928!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd2ec6bfb9c540aed!2sATPBI!5e0!3m2!1ses-419!2smx!4v1661455852044!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                        </div>
                         <p>jndendej</p>
                     </div>
                     <div class="col-12 col-md-4  mt-5 mt-md-0 text-center">
-                        <h4 class="section-heading mb-4">Acerca de nosotros</h4>
-                        <img width="170" height="100" src="assets/img/logos/atpbi.png" alt="">
-                        <div class="text-light px-5 mt-5 text-j">
-                            Proident ad adipisicing consequat tempor reprehenderit nostrud ea amet excepteur deserunt occaecat proident aliquip
-                            consequat. Do culpa amet incididunt amet veniam. Est occaecat ex cupidatat velit laboris.
-                        </div>
+                        <h4 class="color-white-custom mb-4">Acerca de nosotros</h4>
+                        
                     </div>
                     <div class="col-12 col-md-4 mt-5 mt-md-0 text-center">
-                        <h4 class="section-heading mb-4">Información</h4>
+                        <h4 class="color-white-custom mb-4">Información</h4>
                         <div class="row">
                             <div class="col-md-12 col-12 mb-3">
                                 <span class="d-flex d-flex-row text-light">
@@ -381,13 +399,13 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; DCircuits 2022</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-light btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                        <a class="link-dark text-decoration-none me-3 text-white" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none text-white" href="#!">Terms of Use</a>
                     </div>
                 </div>
             </div>

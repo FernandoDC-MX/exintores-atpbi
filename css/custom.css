@@ -60,7 +60,7 @@
 @media screen and (max-width: 985px) {
     .prueba .img-cont{
         width: 100%;
-        height: 55%;
+        height: 95%;
         position: absolute;
         top: 0;
     }
@@ -97,7 +97,6 @@
 @media screen and (max-width: 535px) {
     .custom-container-text{
         width: 90%;
-        border: 1px solid white;
         top: 80px;
         left: 20px;
         background: rgba(0, 0, 0, 0.626);
@@ -161,7 +160,6 @@
         width: 100%;
         height: auto;
         position: inherit;
-        border: 1px solid white;
         left: 0;
         margin-top: 1em;
     }

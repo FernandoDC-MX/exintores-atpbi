@@ -76,6 +76,11 @@
   }
 }
 
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11347,6 +11352,7 @@ p {
   background-image: url("../assets/img/ux/menu_base.png");
   background-position: center;
   height: 130px;
+  width: 100%;
 }
 
 #mainNav .navbar-toggler {
@@ -11510,15 +11516,24 @@ p {
 
 header.masthead {
   color: #fff;
-  background-image: url("../assets/img/ux/COVER_XTINTORES.png");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  background-size: cover;
   height: 100%;
   width: 100%;
   position: relative;
   top: 67px;
+
+}
+
+header .img-cont{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: red;
+  top: 0;
+}
+
+header .img-cont img{
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 985px){
@@ -11575,6 +11590,9 @@ header.masthead .masthead-heading {
   }
 }
 
+.bh{
+  border: 3px solid blue;
+}
 .bg-gray-custom{
   background: #434343;
 }
